@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> NavBarOnSmallScreens</title> <!-- Define o título da página / Sets the title of the page -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres /  Defines the character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Configura a visualização em dispositivos móveis / Configures the viewport for mobile devices -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Inclui o CSS do W3.CSS / Includes W3.CSS stylesheet -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <!-- Inclui a fonte Lato do Google Fonts / Includes Lato font from Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Inclui os ícones do Font Awesome / Includes Font Awesome icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+    
+        *{
+      
+        }
+        body {
+           /*background-color:#680148;
+            font-family: "Lato", sans-serif*/
+        }
+
+        .mySlides {
+            display: none
+        }
+
+        h1 {
+           
+           
+         
+           font-size: 80px;
+            padding: 30px;
+            margin: 30px;
+            text-align: center;
+         
+        }
+           h2{
+            color:azure
+           } 
+    
+        #navDemo{
+            background-color: black;
+        }
+        .modal-title{
+            color: #672b3e;
+        }
+
+        
+        
+        .btn-secondary{
+            background-color: #fed728;
+            color: #672b3e;
+        }
+        footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+   
+    </style>
+</head>
+<body>
+    <!-- Barra de navegação -->
+<div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <!-- Botão para o menu em telas pequenas -->
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-left"
+          href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <!-- Links para a navegação -->
+      <a href="index.html" target="_blank" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="https://github.com/MarcosDev-Softwere"target="_blank" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Portfólio</a>
+      <a href="https://marcosvinicius007.github.io/CsSustentavelFinal.br/index.html"target="_blank" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Projeto Cs-Sustentáveis</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCXUQ0_bKXZ-b9c9C1SnbYl_Olgf07aRFRiWEhZVWTPwpAgg/viewform?usp=header"target="_blank" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <!-- Menu dropdown -->
+        <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="https://marcosdev-softwere.github.io/LayaltLocadoraCarros/"target="_blank" class="w3-bar-item w3-button">Projeto-Carros</a>
+          <a href="#"target="_blank" class="w3-bar-item w3-button">WhatsApp</a>
+          <a href="#" target="_blank" class="w3-bar-item w3-button">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Barra de navegação para telas pequenas -->
+  <div id="navDemo" class="w3-bar-block w3-hover-yellow w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Portfólio</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Projeto Cs-Sustentáveis</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+    <!-- Links adicionais para telas pequenas -->
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Projeto-Carros</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">WhatsApp</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">LinkedIn</a>
+  </div>
+  
+            <div class="container">
+                <h1>PORTIFÓLIO</h1>
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <h2>NOTAS 1° PERÍODO-2023</h2>
+                            <div class="card">
+                             <!--<h1>SOBRE MIIN</h1>-->
+                                <img src="./Editado-008.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3>Marcos Vinícius</h3>
+                                    <p class="card-text">Éstudante do curso superior de Análise e Desenvolvimneto de Sistemas com maior nota na matéria de : Html5 , Css , JavaScript e Php . </p>
+                                    <div class="modal" tabindex="-1" id="staticBackdrop">
+                                        <div class="modal-dialog">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title">Boletim</h5>
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                
+                                                <img src="./Notas-Periodo-1.png" class="card-img-top" alt="...">
+                                                <p>CR GERAL 8,04 DE 10.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Clique aqui para acessar , boletim 1° PERÍODO-2023 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <h2>SOBRE MIM</h2>
+                            <div class="card">
+                                <img src="./PortifólioEditado.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3>Marcos Vinícius</h3>
+                                    <p class="card-text">Marcos Vinícius
+                                        Éstudante do curso superior de Análise e Desenvolvimento de Sistemas.Comprometido em estar sempre se atualizando com as tendências e tecnologias do mercado.Venho através desté portifólio compartilhar um pouco do meu conhecimento ,demostrando algumas habilidades desenvolvendo este portifólio que é open source !
+                                    <div class="modal" tabindex="-1" id="periodo">
+                                        <div class="modal-dialog">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title"><Det>Declaração de Matricula</Det></h5>
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="./ComprovanteDeMatricula.png" class="card-img-top" alt="...">
+                                            
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#periodo">
+                            Clik aqui e acesse a Declaração de Matricula !
+                            </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <h2>NOTAS 3° PERÍODO-2024</h2>
+                            <div class="card">
+                                <img src="./SistemasOperacionais.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3>Marcos Vinícius</h3>
+                                    <p class="card-text">Éstudante do curso superior de Análise e Desenvolvimneto de Sistemas com maior nota na matéria de :Sistemas Operacionais ,Engenharia de Softwere !</p>
+                
+                                    <div class="modal" tabindex="-1" id="periodo-3">
+                                        <div class="modal-dialog">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title">Boletim</h5>
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                
+                                                <img src="./Img-3-Periodo.png" class="card-img-top" alt="...">
+                                                <p>CR GERAL 8,04 DE 10.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#periodo-3">
+                                    Clique aqui para acessar , boletim 3° PERÍODO-2024 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+
+
+             <div class="container">
+                <h1>Tecnologias</h1>
+                 <div class="container text-center">
+                     <div class="row">
+                         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                             <div class="card">
+                                 <img src="./HtmlEd.png" class="card-img-top" alt="...">
+                                 <div class="card-body">
+                                     <p class="card-text"><h5>Tenho dominio em HTML, ou HyperText Markup Language (Linguagem de Marcação de Hipertexto), é a base de todas as páginas da web.</h5>  Ele é usado para estruturar e organizar o conteúdo que vemos online, como textos, imagens, vídeos e links. Imagine o HTML como o esqueleto de um site, definindo sua aparência geral antes de aplicar qualquer estilo ou interatividade.</p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                             <div class="card">
+                                 <img src="./Css.png" class="card-img-top" alt="...">
+                                 <div class="card-body">
+                                     <p class="card-text"><h5>Tenho dominio em CSS, ou Cascading Style Sheets (Folhas de Estilo em Cascata), é a base da apresentação visual de todas as páginas da web.</h5>Ele permite controlar o layout,o adicionando estilo e design e é fundamental para a criação de interfaces responsivas . Dominar CSS significa ter a capacidade de transformar uma estrutura básica em uma experiência visual rica e envolvente para o usuário.</p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                             <div class="card">
+                                 <img src="./JsEd.png" class="card-img-top" alt="...">
+                                 <div class="card-body">
+                                     <p class="card-text"><h5>Tenho dominio em JS, ou JavaScript, é a base da interatividade de todas as páginas da web. Ele permite adicionar comportamento dinâmico aos elementos.</h5>JavaScript é essencial para a criação de aplicações responsivas, permitindo atualizações em tempo real e melhorando significativamente a experiência do usuário. Dominar JavaScript significa ter a capacidade de transformar páginas estáticas em dinâmicas.</p>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+
+
+
+
+
+
+             
+             <div class="container">
+         
+                 <div class="container text-center">
+                     <div class="row">
+                         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                             <div class="card">
+                                 <img src="./PhpEd.png" class="card-img-top" alt="...">
+                                 <div class="card-body">
+                                     <p class="card-text"><h5>Tenho domínio em PHP, ou Hypertext Preprocessor, uma linguagem de programação amplamente utilizada para o desenvolvimento web.</h5>PHP é a base para a criação de sistemas dinâmicos e interativos, permitindo a integração com bancos de dados, a manipulação de informações e a geração de conteúdo dinâmico em páginas web. Dominar PHP significa ter a capacidade de transformar páginas estáticas em aplicações robustas e funcionais, atendendo às necessidades de projetos modernos e eficientes.</p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                             <div class="card">
+                                 <img src="./SQLed.png" class="card-img-top" alt="...">
+                                 <div class="card-body">
+                                     <p class="card-text"><h5>Tenho domínio em SQL, ou Structured Query Language (Linguagem de Consulta Estruturada), que é a base para a manipulação e gerenciamento de dados em sistemas relacionais.</h5>SQL é essencial para criar, consultar, atualizar e administrar bancos de dados, sendo fundamental em aplicações que dependem de dados organizados e acessíveis. Dominar SQL significa ter a habilidade de estruturar e otimizar bancos de dados para garantir eficiência e integridade, atendendo às demandas.</p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                             <div class="card">
+                                 <img src="./PostrGreEd.png" class="card-img-top" alt="...">
+                                 <div class="card-body">
+                                     <p class="card-text"><h5>Tenho domínio em PostgreSQL, um sistema de gerenciamento de banco de dados relacional avançado, baseado na Linguagem de Consulta Estruturada (SQL). PostgreSQL</h5>PostgreSQL é essencial para criar, consultar, atualizar e administrar bancos de dados, com o diferencial de oferecer suporte a extensões, tipos de dados avançados e funcionalidades robustas que tornam o sistema altamente versátil.
+
+                                        Dominar PostgreSQL significa ser capaz de estruturar e otimizar bancos de dados para atender às necessidades de aplicações modernas.</p>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+
+
+             
+             <div class="container">
+               
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="card">
+                                <img src="./ReactEd.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text"><h5>Tenho domínio em React , React é uma biblioteca JavaScript amplamente utilizada para construir interfaces de usuário dinâmicas e responsivas.</h5><hr>Ele permite criar componentes reutilizáveis que gerenciam o estado e o comportamento de forma eficiente, resultando em experiências interativas em aplicativos web. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="card">
+                                <img src="./VueEd.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text"><h5>Tenho domínio em Vue.js , Vue.js é uma estrutura JavaScript progressiva e poderosa para construir interfaces de usuário modernas e dinâmicas.</h5>O Vue se destaca pela sua simplicidade e flexibilidade, permitindo criar componentes reutilizáveis e facilmente integráveis,Dominar o Vue significa estruturar aplicações de forma modular, estados de fluxos com eficiência, e criar interfaces altamente interativas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="card">
+                                <img src="./LarevelEd.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text"><h5>Tenho domínio em  Laravel , Laravel é um framework PHP elegante e poderoso, projetado para facilitar o desenvolvimento de aplicações web modernas.</h5>poderoso, projetado para facilitar o desenvolvimento de aplicações web modernas. Com recursos como roteamento simples, gerenciamento eficiente de bancos de dados e integração com templates intuitivos, o Laravel torna o processo de desenvolvimento mais ágil.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <div class="container">
+             
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="card">
+                                <img src="./DokerEd.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text"><h5>Tenho domínio em Docker , Docker é uma plataforma poderosa que simplifica a criação, implantação e execução de aplicações por meio de containers.</h5><br>Esses containers permitem que desenvolvedores empacotem o código, dependências e configurações necessárias, garantindo que a aplicação funcione de maneira consistente em qualquer ambiente.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="card">
+                                <img src="./GitEd.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text"><h5>Tenho domínio em Git. Git é uma ferramenta essencial e poderosa que facilita o controle de versão e a gestão de projetos de desenvolvimento de software.</h5>Com o Git, desenvolvedores podem rastrear alterações no código-fonte, colaborar de forma eficiente com equipes e gerenciar diferentes versões de um projeto. Essa plataforma garante que o histórico de desenvolvimento seja preservado.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="card">
+                                <img src="./GitHubEd.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text"><h5>Tenho domínio em GitHub. GitHub é uma plataforma poderosa e essencial para o desenvolvimento de software colaborativo e o gerenciamento de código-fonte.</h5>Ele permite que desenvolvedores armazenem, compartilhem e versionem seus projetos de maneira segura e eficiente, além de facilitar a colaboração em equipe. Com funcionalidades como pull requests, controle de versões e integração contínua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+           <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+           <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+       </body>
+       </html>
+   <script>
+       // Função para alternar o menu em telas pequenas // Function to toggle the menu on small screens
+       function myFunction() {
+           var x = document.getElementById("navDemo");
+           if (x.className.indexOf("w3-show") == -1) {
+               x.className += " w3-show";
+           } else {
+               x.className = x.className.replace(" w3-show", "");
+           }
+       }
+   </script>
+   <!-- Link para o arquivo JavaScript -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+       crossorigin="anonymous"></script>
+   <script src="./script.Js"></script>
+   <footer>
+    <p>Desenvolvedor: Marcos Vinicius</p>
+    <p>WhatsApp: 7198777 2415</p>
+    <p>E-mail: marcosviniciussouzasilva@07gmail.com</p>
+  </footer>
+  
+</body>
+
+</html>
